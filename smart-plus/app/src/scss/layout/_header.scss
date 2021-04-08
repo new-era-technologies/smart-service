@@ -94,6 +94,7 @@
     }
     &__dropdown {
         margin-top: 17px;
+        position: relative;
     }
 }
 
@@ -109,4 +110,33 @@
         width: 8px;
         height: 4px;
     }
+    &__content {
+        width: 100%;
+        padding: 20px;
+        position: absolute;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-4em);
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 3px;
+        box-sizing: border-box;
+        outline: none;
+        @include font(Karla, normal, 400, 16px, 24px, #454545);
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        z-index: 1;
+    }
+    &__item {
+        padding: 5px 0;
+        cursor: pointer;
+    }
+}
+
+.show {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
 }
