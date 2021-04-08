@@ -14,17 +14,17 @@ dropBtn.forEach(
 )
 
 //hide menu by click out
-window.addEventListener('click', function (e) {
-    if (!e.target.classList.contains('dropdown__btn')) {
-        dropCont.forEach(
-            it => it.classList.remove('show')
-        )
-    }
-});
+// window.addEventListener('click', function (e) {
+//     if (!e.target.classList.contains('dropdown__btn')) {
+//         dropCont.forEach(
+//             it => it.classList.remove('show')
+//         )
+//     }
+// });
 
 //change value in dropdown button
 menuItems.forEach(
     it => it.addEventListener('click', function () {
-        this.closest('.dropdown').children[0].innerText = this.innerText;
+        this.closest('.dropdown').querySelector('span').innerText = this.innerText;
     })
 )
