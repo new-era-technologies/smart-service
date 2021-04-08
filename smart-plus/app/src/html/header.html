@@ -1,21 +1,32 @@
 <header class="header">
     <div class="header__wrapper">
         <div class="container">
-            <div class="header__inner">
-                <a href="/" class="header__logo">
-                    <img src="assets/img/logo.png" alt="logo-img">
-                </a>
+            <div class="header__container">
+                <div class="header__inner">
+                    <a href="/" class="header__logo">
+                        <img src="assets/img/logo.png" alt="logo-img">
+                    </a>
+                    <div id="burger" class="header__burger burger">
+                        <div class="burger__line burger__line--line1"></div>
+                        <div class="burger__line burger__line--line2"></div>
+                        <div class="burger__line burger__line--line3"></div>
+                    </div>
+                </div>
                 <nav class="header__nav nav">
-                    <div class="nav__desktop">
-                        <ul class="nav__list"></ul>
-                    </div>
-                    <div class="nav__mobile">
-                        <div id="burger" class="nav__burger burger">
-                            <div class="burger__line burger__line--line1"></div>
-                            <div class="burger__line burger__line--line2"></div>
-                            <div class="burger__line burger__line--line3"></div>
-                        </div>
-                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--btn" target="_blank">Order Now</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--hovered" target="_blank">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--hovered" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--hovered" target="_blank">Blog</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>

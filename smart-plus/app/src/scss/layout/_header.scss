@@ -4,7 +4,11 @@
     background-size: cover;
     &__wrapper {
         padding-top: 15px;
-        transition: .1s ease-in-out;
+        transition: 0.1s ease-in-out;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
     }
     &__inner {
         padding-bottom: 45px;
@@ -17,6 +21,19 @@
         height: 23px;
         display: flex;
         text-decoration: none;
+    }
+    &__burger {
+        cursor: pointer;
+        .burger__line {
+            width: 23px;
+            height: 2px;
+            margin: 3px 0;
+            background: #ffffff;
+            transition: 0.2s ease-in;
+        }
+    }
+    &__nav {
+        display: none;
     }
     &__title {
         @include font(Playfair Display, normal, 700, 36px, 1.2, #ffffff);
@@ -46,17 +63,35 @@
 }
 
 .nav {
-    &__desktop {
-        display: none;
+    margin-top: 30px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    &__burger {
-        cursor: pointer;
-        .burger__line {
-            width: 23px;
-            height: 2px;
-            margin: 3px 0;
-            background: #ffffff;
-            transition: .2s ease-in;
+    &__item {
+        margin-top: 30px;
+    }
+    &__item:nth-child(2) {
+        margin-top: 60px;
+    }
+    &__link {
+        @include font(Ovo, normal, 400, 24px, 30px, #ffffff);
+        text-decoration: none;
+        &--btn {
+            width: 251px;
+            height: 43px;
+            margin: 0 auto;
+            background-color: #da6f5b;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include font(Karla, normal, 400, 16px, 1.2, #ffffff);
+        }
+        &--hovered:hover {
+            text-decoration: underline;
         }
     }
 }
@@ -164,4 +199,8 @@
 
 .rotate-burger-line .burger__line--line3 {
     transform: rotate(225deg) translate(3px, 4px);
+}
+
+.display-block {
+    display: block;
 }
