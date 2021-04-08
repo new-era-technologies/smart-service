@@ -20,3 +20,5 @@ test task
 11. Доступность при выключенных (загружающихся) картинках.
 
 https://drive.google.com/drive/folders/1hSnbLWhH310TmunUWdZAdaQsucTcBUJE
+
+https://www.markupeasy.ru/app/edit/83466
