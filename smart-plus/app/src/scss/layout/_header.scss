@@ -204,3 +204,117 @@
 .display-block {
     display: block;
 }
+
+@media screen and (min-width: 1160px) {
+    .header {
+        padding-bottom: 50px;
+        background: url("../assets/img/bg-header-desktop.png") no-repeat;
+        background-size: cover;
+        &__wrapper {
+            padding-top: 22px;
+        }
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__inner {
+            padding: 0;
+        }
+        &__logo {
+            width: 119px;
+            height: 36px;
+        }
+        &__burger {
+            display: none;
+        }
+        &__nav {
+            display: block;
+        }
+        &__title {
+            width: 740px;
+            margin: 100px auto 0;
+            font-size: 72px;
+        }
+        &__subtitle {
+            width: 500px;
+            height: 60px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        &__form {
+            margin-top: 25px;
+            padding: 35px 45px 40px;
+        }
+    }
+    .nav {
+        margin: 0;
+        &__list {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        &__item {
+            margin: 0;
+        }
+        &__item:nth-child(1) {
+            order: 4;
+        }
+        &__item:nth-child(2) {
+            margin-top: 0;
+            margin-right: 35px;
+        }
+        &__item:nth-child(3) {
+            margin-right: 50px;
+        }
+        &__item:nth-child(4) {
+            margin-right: 220px;
+        }
+        &__link {
+            padding: 5px 10px;
+            @include font(Karla, normal, 400, 18px, 1.2, #ffffff);
+            box-sizing: border-box;
+            &--btn {
+                width: 200px;
+            }
+            &--hovered:hover {
+                background-color: #2d2d35;
+                text-decoration: none;
+            }
+        }
+    }
+    .form {
+        &__title {
+            font-size: 24px;
+        }
+        &__inner {
+            margin-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__input,
+        .dropdown__btn {
+            width: 324px;
+            height: 57px;
+            margin: 0;
+            font-size: 18px;
+            line-height: 30px;
+            &--submit {
+                width: 224px;
+                height: 43px;
+                margin: 25px auto 0;
+                display: block;
+            }
+        }
+        &__dropdown {
+            margin: 0;
+        }
+    }
+
+    .dropdown {
+        &__content {
+            top: 67px;
+            font-size: 18px;
+        }
+    }
+}
