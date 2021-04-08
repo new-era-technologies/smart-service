@@ -1,0 +1,56 @@
+.header {
+    background: url("../assets/img/bg-header.png") no-repeat;
+    background-size: cover;
+    &__inner {
+        padding-top: 15px;
+        padding-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 77px;
+        height: 23px;
+        display: flex;
+        text-decoration: none;
+    }
+    &__title {
+        @include font(Playfair Display, normal, 700, 36px, 1.2, #ffffff);
+        text-align: center;
+    }
+    &__subtitle {
+        width: 275px;
+        height: 100px;
+        margin: 25px auto 0 auto;
+        @include font(Karla, normal, 400, 16px, 24px, #ffffff);
+        text-align: center;
+        overflow: hidden;
+    }
+    &__img {
+        width: 17px;
+        height: 23px;
+        margin: 15px auto 0;
+        display: flex;
+        cursor: pointer;
+    }
+    &__form {
+        margin-top: 15px;
+        margin-bottom: 45px;
+        padding: 30px 20px;
+    }
+}
+
+.nav {
+    &__desktop {
+        display: none;
+    }
+    &__burger {
+        cursor: pointer;
+        .burger__line {
+            width: 23px;
+            height: 2px;
+            margin: 3px 0;
+            background: #ffffff;
+        }
+    }
+}
