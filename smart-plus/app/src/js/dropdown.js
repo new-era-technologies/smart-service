@@ -14,7 +14,7 @@ dropBtn.forEach(
 )
 
 //hide menu by click out
-window.addEventListener('click', function (e) {
+document.body.addEventListener('click', function (e) {
     if (!e.target.classList.contains('dropdown__btn') && !e.target.classList.contains('dropdown__value')) {
         dropCont.forEach(
             it => it.classList.remove('show')
