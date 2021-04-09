@@ -2,7 +2,7 @@
 
 //declare
 const arrHeader = document.querySelector('.header__img'),
-    subtitleHeader = document.querySelector('.header__subtitle');
+      subtitleHeader = document.querySelector('.header__subtitle');
 
 //show full subtitle
 arrHeader.addEventListener('click', function () {
