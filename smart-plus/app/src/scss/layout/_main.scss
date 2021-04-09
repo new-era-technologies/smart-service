@@ -1,4 +1,6 @@
 .main-content {
+    width: 290px;
+    margin: 0 auto;
     padding: 45px 0 50px;
     &__title {
         @include font(Playfair Display, normal, 400, 36.1px, 1.2, #2d2d35);
@@ -62,8 +64,10 @@
         padding: 30px 20px 50px;
     }
     &__text {
+        height: 168px;
         @include font(Karla, italic, 400, 16.1px, 24px, #5b5e6b);
         text-align: center;
+        overflow: hidden;
     }
     &__line {
         width: 100%;
