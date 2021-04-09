@@ -205,6 +205,11 @@
     display: block;
 }
 
+.show-subtitle {
+    height: auto !important;
+    overflow: visible;
+}
+
 @media screen and (min-width: 1160px) {
     .header {
         padding-bottom: 50px;
